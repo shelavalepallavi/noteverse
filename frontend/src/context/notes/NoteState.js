@@ -18,7 +18,7 @@ const NoteState = (props) => {
   // }
 
 
-  const host = "https://noteverse-wbep.onrender.com/"
+  const host = "https://noteverse-wbep.onrender.com"
   // const notesInitial = [
   //   {
   //     "_id": "66c9335064698b73f3a27f3b",
