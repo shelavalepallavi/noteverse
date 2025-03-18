@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    console.log(location.pathname);
+    
   }, [location]);
   return (
     <div>

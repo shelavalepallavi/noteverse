@@ -2,80 +2,11 @@ import React, { useState } from 'react';
 import NoteContext from "./NoteContext";
 
 const NoteState = (props) => {
-  // const s1 = {
-  //   "name": "Harry",
-  //   "class": "5b"
-  // };
-  // const [state, setState] = useState(s1)
-  // const update = () => {
-  //   setTimeout(() => {
-  //     setState({
-  //       "name": "cherry",
-  //       "class": "10b"
-  //     })
-  //   }, 1000)
-
-  // }
+ 
 
 
   const host = "https://noteverse-wbep.onrender.com"
-  // const notesInitial = [
-  //   {
-  //     "_id": "66c9335064698b73f3a27f3b",
-  //     "user": "66c87bd45ffa751c14479040",
-  //     "title": "My title updated",
-  //     "description": "Please wake up early updaated",
-  //     "tag": "Browse",
-  //     "date": "2024-08-24T01:11:44.424Z",
-  //     "__v": 0
-  //   },
-  //   {
-  //     "_id": "66d1b3cd78533a1a1019i78bd7f",
-  //     "user": "66c87bd45ffa751c14479040",
-  //     "title": "welcome",
-  //     "description": "Please wake up early",
-  //     "tag": "personal",
-  //     "date": "2024-08-30T11:58:05.442Z",
-  //     "__v": 0
-  //   },
-  //   {
-  //     "_id": "66d1b3cd7853q2343a1a1019bd7f3",
-  //     "user": "66c87bd45ffa751c14479040",
-  //     "title": "welcome",
-  //     "description": "Please wake up early",
-  //     "tag": "personal",
-  //     "date": "2024-08-30T11:58:05.442Z",
-  //     "__v": 0
-  //   },
-  //   {
-  //     "_id": "66d1b3cd7138533a1a101qr9bd7f",
-  //     "user": "66c87bd45ffa751c14479040",
-  //     "title": "welcome",
-  //     "description": "Please wake up early",
-  //     "tag": "personal",
-  //     "date": "2024-08-30T11:58:05.442Z",
-  //     "__v": 0
-  //   },
-  //   {
-  //     "_id": "66d1b3cd78533a1a1019rqrbd7564f",
-  //     "user": "66c87bd45ffa751c14479040",
-  //     "title": "welcome",
-  //     "description": "Please wake up early",
-  //     "tag": "personal",
-  //     "date": "2024-08-30T11:58:05.442Z",
-  //     "__v": 0
-  //   },
-  //   {
-  //     "_id": "66d1b3cd78533a12341a101fawr9bd7f",
-  //     "user": "66c87bd45ffa751c14479040",
-  //     "title": "welcome",
-  //     "description": "Please wake up early",
-  //     "tag": "personal",
-  //     "date": "2024-08-30T11:58:05.442Z",
-  //     "__v": 0
-  //   }
-
-  // ]
+  
   const notesInitial = []
 
   const [notes, setNotes] = useState(notesInitial)
@@ -111,6 +42,7 @@ const NoteState = (props) => {
     setNotes(notes.concat(note))
   }
 
+  
   // Delete a note
   const deleteNote = async (id) => {
     ///API CALL
@@ -121,8 +53,8 @@ const NoteState = (props) => {
         "auth-token": localStorage.getItem('token')
       },
     });
-    const json = await response.json()
-    console.log(json);
+    // const json = await response.json()
+    
     
     const newNotes = notes.filter((note) => { return note._id !== id })
     setNotes(newNotes)
@@ -142,7 +74,7 @@ const NoteState = (props) => {
       body: JSON.stringify({ title, description, tag })
     });
     const json = await response.json()
-    console.log(json);
+   
     
 
     let newNotes = JSON.parse(JSON.stringify(notes))

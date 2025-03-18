@@ -33,7 +33,7 @@ const App = () => {
     <NoteState>
       <Router>
         <Navbar />
-        {/* <Alert message="This is message!!!"/> */}
+        
         <Alert alert={alert}/>
         <div className="container">
         <Routes>

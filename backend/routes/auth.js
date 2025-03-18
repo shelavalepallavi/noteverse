@@ -10,24 +10,6 @@ const fetchuser = require('../middleware/fetchuser')
 const JWT_SECRET = 'HarryisgoodB$oy'
 
 
-//create a User using: POST "/api/auth/". Doesnt require Auth
-
-/** 
-router.get('/', (req,res)=>{
-  // const obj = {
-  //   a: 'thios',
-  //   number: 34
-  // };
-  // res.json(obj);
-
-
-  //when we want to see req.body then we have do use middleware(app.use(express.json())) 
-  console.log(req.body);
-  // res.send('hello')
-  const user = User(req.body)
-  user.save()
-  res.send(req.body)
-})*/
 
 //ROUTE 1 :create a User using: POST "/api/auth/createuser". No login required.
 router.post('/createuser', [
@@ -72,12 +54,7 @@ router.post('/createuser', [
   }
 
 
-  // .then(user => res.json(user))
-  // .catch(err=> {console.log(err)
-  //   res.json({error: 'Please enter a unique value for email', message:err.message})
-  // })
-
-  // res.send(req.body);
+ 
 });
 
 // ROUTE 2 :Authenticate a User using: POST "/api/auth/login".  login required.
