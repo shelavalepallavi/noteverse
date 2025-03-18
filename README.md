@@ -24,3 +24,7 @@ About
 - Frontend: React.js, Bootstrap
 - Backend: Node.js, Express.js  
 - Database: MongoDB 
+
+## 🚀 Deployment
+- **Frontend:** Hosted on [Netlify](https://noteverse-app.netlify.app)
+- **Backend:** Hosted on Render
