@@ -47,7 +47,7 @@ const Login = (props) => {
           <label htmlFor="password" className="form-label">Password</label>
           <input type="password" className="form-control" value={credentials.password} onChange={onChange} name='password' id="password" />
         </div>
-        <button type="submit" className="btn btn-primary" >Submit</button>
+        <button type="submit" className="btn" style={{ color: "#3D0182" }}>Submit</button>
       </form>
     </div>
   )
