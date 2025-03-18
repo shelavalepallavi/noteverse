@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='container-fluid  d-flex flex-column-reverse flex-md-row justify-content-between  align-items-center gap-5 w-100'>
       <div className='flex-grow-1'>
-      <h2 className="fw-bold mb-3 text-primary">About NoteVerse</h2>
+      <h2 className="fw-bold mb-3 " >About NoteVerse</h2>
   <p className="text-muted fs-5">
     NotVerse is a simple and powerful note-taking web app built with the MERN stack. It helps you create, manage, and organize your notes efficiently.
   </p>

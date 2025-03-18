@@ -15,9 +15,9 @@ const Navbar = () => {
   }, [location]);
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg shadow-sm ">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">NoteVerse</Link>
+          <Link className="navbar-brand fw-semibold fs-3" to="/" style={{ color: "#3D0182" }}>NoteVerse</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -31,9 +31,9 @@ const Navbar = () => {
               </li>
             </ul>
             {!localStorage.getItem('token') ? <form className="d-flex" role="search">
-              <Link className="btn btn-primary mx-1" to="/login" role='button'>Log in</Link>
-              <Link className="btn btn-primary mx-1" to="/signup" role='button'>Signup</Link>
-            </form> : <button onClick={handleLogout} className='btn btn-primary'>Logout</button>}
+              <Link className="btn  mx-1 fw-bold" to="/login" role='button' style={{ backgroundColor: "#3D0182", color: "white", border: "none" }}>Log in</Link>
+              <Link className="btn  mx-1 fw-bold" to="/signup" role='button' style={{ backgroundColor: "#3D0182", color: "white", border: "none" }}>Signup</Link>
+            </form> : <button onClick={handleLogout} className='btn fw-bold' style={{ backgroundColor: "#3D0182", color: "white", border: "none" }}>Logout</button>}
           </div>
         </div>
       </nav>
