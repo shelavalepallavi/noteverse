@@ -5,7 +5,7 @@ const NoteState = (props) => {
  
 
 
-  const host = "https://noteverse-wbep.onrender.com"
+  const host = process.env.REACT_APP_BACKEND_URL
   
   const notesInitial = []
 
