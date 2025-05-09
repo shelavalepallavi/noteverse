@@ -14,11 +14,11 @@ About
 
 
 ### ✨ Features  
-- User Authentication (SignUp, Login, Logout)  
-- Add, edit, and delete notes  
-- Responsive design  
-- Protected routes  
-- Alert messages for actions  
+- User Authentication (SignUp, Login, Logout).
+- Add, edit, and delete notes.
+- Responsive design.
+- Protected routes.
+- Alert messages for actions.
 
 ### 🛠 Tech Stack  
 - Frontend: React.js, Bootstrap
