@@ -27,4 +27,4 @@ About
 
 ## 🚀 Deployment
 - **Frontend:** Hosted on [Netlify](https://noteverse-app.netlify.app)
-- **Backend:** Hosted on Render
+- **Backend:** Hosted on Render.
